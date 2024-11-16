@@ -11,24 +11,26 @@ import {
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<DashBoard />}>
-            <Route index path="/" element={<Student />} />
-            <Route exact path="/add-student" element={<AddStudent />} />
-            <Route exact path="/students/" element={<Student />} />
-            <Route exact path="/students/:id" element={<StudentsDetails />} />
-            <Route
-              exact
-              path="/selected-student"
-              element={<SelectedStudent />}
-            />
-            <Route exact path="/course/:id" element={<Course />} />
-          </Route>
-        </Routes>
-      </Router>
-    </div>
+ 
+      <div className="App">
+        <Router>
+          <Routes>
+            <Route exact path="/" element={<DashBoard />}>
+              <Route index path="/" element={<Student />} />
+              <Route exact path="/add-student" element={<AddStudent />} />
+              <Route exact path="/students/" element={<Student />} />
+              <Route exact path="/students/:id" element={<StudentsDetails />} />
+              <Route
+                exact
+                path="/selected-student"
+                element={<SelectedStudent />}
+              />
+              <Route exact path="/course/:id" element={<Course />} />
+            </Route>
+          </Routes>
+        </Router>
+      </div>
+ 
   );
 }
 
